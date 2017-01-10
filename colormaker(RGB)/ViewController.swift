@@ -60,6 +60,18 @@ class ViewController: UIViewController {
         BlueLabel.text = "Blue: \(RoundedBlue)"
     }
     
+    @IBOutlet weak var ResetButton: UIButton!
+    
+    @IBAction func ResetButtonAction(_ sender: UIButton) {
+        RedSlider.value = 0.5
+        GreenSlider.value = 0.5
+        BlueSlider.value = 0.5
+        
+        RedLabel.text = "Red: 0"
+        GreenLabel.text = "Green: 0"
+        BlueLabel.text = "Blue: 0"
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
